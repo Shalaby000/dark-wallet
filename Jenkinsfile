@@ -4,8 +4,6 @@ pipeline {
     tools{
         jdk 'jdk17'
         nodejs 'NodeJS'
-        git 'Default Git'
-        
     }
     
     environment{
