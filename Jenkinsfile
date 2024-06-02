@@ -8,13 +8,13 @@ pipeline {
     }
     
     environment{
-        SCANNER_HOME= tool 'sonar-scanner'
+        SCANNER_HOME= tool 'SonarWave'
     }
     
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/jaiswaladi246/fullstack-bank.git'
+                git branch: 'main', url: 'https://github.com/Shalaby000/dark-wallet.git'
             }
         }
         
