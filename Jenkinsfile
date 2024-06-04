@@ -32,7 +32,7 @@ pipeline {
         
         stage('SONARQUBE ANALYSIS') {
             steps {
-                withSonarQubeEnv('sonar') {
+                withSonarQubeEnv('SonarWave') {
                     sh " $SCANNER_HOME/bin/SonarWave -Dsonar.projectName=Bank -Dsonar.projectKey=Bank "
                 }
             }
